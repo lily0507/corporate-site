@@ -217,7 +217,9 @@ header{
     }
     
     #main {
+      @media (min-width: 550px) {
         padding-right: 20px;
+      }
         h2 {
             color: $blue1;
             border-bottom-width: 3px;
@@ -261,6 +263,10 @@ header{
     #sidebar {
       padding-bottom: 20px;
         .pc_sidemenu {
+          
+          @media (max-width: 550px) {
+            display: none;
+          }
             h3 {
                 color: $blue1;
                 @include fontsize(14);
